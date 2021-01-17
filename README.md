@@ -84,3 +84,19 @@ Restart the Integration Node.
 Copy ‘ JobExecutionNode_toolkit_plugin.jar’ file that is provided in this github project (IIBv10\\Toolkit_plugin) to `<IIB-Install-Directory>/tools/plugins` directory.
 
 Restart the toolkit with “–clean” option
+
+# Installing the Plug-in Node in ACE V11
+
+<b>Runtime :</b>
+
+Download the code from ACEV11/Runtime folder and build it in Toolkit  as a Java project and export it as a jar file - JobExecutionNode.jar
+
+Place this jar file to `<ACE-Install–Directory>/server/jplugin`.
+
+Restart the Integration Node.
+
+<b>Toolkit:</b>
+
+Copy ‘ JobExecutionNode_toolkit_plugin.jar’ file that is provided in this github project (ACEV11\\Toolkit_plugin) to `<ACE-Install-Directory>/tools/plugins` directory.
+
+Restart the Integration Toolkit with “–clean” option
