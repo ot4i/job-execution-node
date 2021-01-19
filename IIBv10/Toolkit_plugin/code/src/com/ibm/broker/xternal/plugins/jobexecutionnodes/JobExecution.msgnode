@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="com/ibm/broker/xternal/plugins/jobexecutionnodes/JobExecution.msgnode" nsPrefix="com_ibm_broker_xternal_plugins_jobexecutionnodes_JobExecution.msgnode">
+  <eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1" useDefaults="true">
+    <eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.jobType" name="jobType" eType="//@eClassifiers.1" defaultValueLiteral="COMMANDLINE"/>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.jobLocation" name="jobLocation" defaultValueLiteral="">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.commandSource" name="commandSource" eType="//@eClassifiers.2" defaultValueLiteral="MESSAGE"/>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.resultFile" name="resultFile">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.logLevel" name="logLevel" eType="//@eClassifiers.3" defaultValueLiteral="NONE"/>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.propagateResult" name="propagateResult" eType="//@eClassifiers.4" defaultValueLiteral="NO"/>
+    <translation xmi:type="utility:TranslatableString" key="JobExecution" bundleName="com/ibm/broker/xternal/plugins/jobexecutionnodes/JobExecution" pluginId="com.ibm.broker.xternal.plugins.jobexecutionnodes"/>
+    <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/com.ibm.broker.xternal.plugins.jobexecutionnodes/icons/full/obj16/com/ibm/broker/xternal/plugins/jobexecutionnodes/JobExecution.gif"/>
+    <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/com.ibm.broker.xternal.plugins.jobexecutionnodes/icons/full/obj30/com/ibm/broker/xternal/plugins/jobexecutionnodes/JobExecution.gif"/>
+    <composition>
+      <nodes xmi:type="eflow:FCMSource" xmi:id="InTerminal.in" location="100,20">
+        <translation xmi:type="utility:TranslatableString" key="InTerminal.in" bundleName="com/ibm/broker/xternal/plugins/jobexecutionnodes/JobExecution" pluginId="com.ibm.broker.xternal.plugins.jobexecutionnodes"/>
+      </nodes>
+      <nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.failure" location="200,40">
+        <translation xmi:type="utility:TranslatableString" key="OutTerminal.failure" bundleName="com/ibm/broker/xternal/plugins/jobexecutionnodes/JobExecution" pluginId="com.ibm.broker.xternal.plugins.jobexecutionnodes"/>
+      </nodes>
+      <nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.out" location="300,60">
+        <translation xmi:type="utility:TranslatableString" key="OutTerminal.out" bundleName="com/ibm/broker/xternal/plugins/jobexecutionnodes/JobExecution" pluginId="com.ibm.broker.xternal.plugins.jobexecutionnodes"/>
+      </nodes>
+    </composition>
+    <propertyOrganizer>
+      <propertyDescriptor groupName="Group.Basic" configurable="true" describedAttribute="Property.jobType">
+        <propertyName xmi:type="utility:TranslatableString" key="Property.jobType" bundleName="com/ibm/broker/xternal/plugins/jobexecutionnodes/JobExecution" pluginId="com.ibm.broker.xternal.plugins.jobexecutionnodes"/>
+        <propertyDescriptor groupName="Group.Basic" configurable="true" describedAttribute="Property.jobLocation">
+          <propertyName xmi:type="utility:TranslatableString" key="Property.jobLocation" bundleName="com/ibm/broker/xternal/plugins/jobexecutionnodes/JobExecution" pluginId="com.ibm.broker.xternal.plugins.jobexecutionnodes"/>
+          <propertyDescriptor groupName="Group.Basic" configurable="true" describedAttribute="Property.commandSource">
+            <propertyName xmi:type="utility:TranslatableString" key="Property.commandSource" bundleName="com/ibm/broker/xternal/plugins/jobexecutionnodes/JobExecution" pluginId="com.ibm.broker.xternal.plugins.jobexecutionnodes"/>
+            <propertyDescriptor groupName="Group.Basic" configurable="true" describedAttribute="Property.resultFile">
+              <propertyName xmi:type="utility:TranslatableString" key="Property.resultFile" bundleName="com/ibm/broker/xternal/plugins/jobexecutionnodes/JobExecution" pluginId="com.ibm.broker.xternal.plugins.jobexecutionnodes"/>
+              <propertyDescriptor groupName="Group.Basic" configurable="true" describedAttribute="Property.logLevel">
+                <propertyName xmi:type="utility:TranslatableString" key="Property.logLevel" bundleName="com/ibm/broker/xternal/plugins/jobexecutionnodes/JobExecution" pluginId="com.ibm.broker.xternal.plugins.jobexecutionnodes"/>
+                <propertyDescriptor groupName="Group.Basic" configurable="true" describedAttribute="Property.propagateResult">
+                  <propertyName xmi:type="utility:TranslatableString" key="Property.propagateResult" bundleName="com/ibm/broker/xternal/plugins/jobexecutionnodes/JobExecution" pluginId="com.ibm.broker.xternal.plugins.jobexecutionnodes"/>
+                </propertyDescriptor>
+              </propertyDescriptor>
+            </propertyDescriptor>
+          </propertyDescriptor>
+        </propertyDescriptor>
+      </propertyDescriptor>
+    </propertyOrganizer>
+  </eClassifiers>
+  <eClassifiers xmi:type="ecore:EEnum">
+    <eLiterals xmi:id="jobType.COMMANDLINE" name="COMMANDLINE"/>
+    <eLiterals xmi:id="jobType.BATCH" name="BATCH" value="1"/>
+    <eLiterals xmi:id="jobType.SHELL" name="SHELL" value="2"/>
+  </eClassifiers>
+  <eClassifiers xmi:type="ecore:EEnum">
+    <eLiterals xmi:id="commandSource.MESSAGE" name="MESSAGE"/>
+    <eLiterals xmi:id="commandSource.PROPERTY" name="PROPERTY" value="1"/>
+  </eClassifiers>
+  <eClassifiers xmi:type="ecore:EEnum">
+    <eLiterals xmi:id="logLevel.NONE" name="NONE"/>
+    <eLiterals xmi:id="logLevel.INFO" name="INFO" value="1"/>
+    <eLiterals xmi:id="logLevel.ERROR" name="ERROR" value="2"/>
+    <eLiterals xmi:id="logLevel.DEBUG" name="DEBUG" value="3"/>
+  </eClassifiers>
+  <eClassifiers xmi:type="ecore:EEnum">
+    <eLiterals xmi:id="propagateResult.NO" name="NO"/>
+    <eLiterals xmi:id="propagateResult.YES" name="YES" value="1"/>
+  </eClassifiers>
+</ecore:EPackage>

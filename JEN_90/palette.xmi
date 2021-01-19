@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<palette:CategoryCmp xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:palette="http://www.ibm.com/wbi/2005/eflow_palette" xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" xmi:id="UserNodes">
+  <categoryLabel xsi:type="utility:TranslatableString" key="category.name" bundleName="palette" pluginId="com.ibm.broker.xternal.plugins.jobexecutionnodes"/>
+  <cmpGroups xsi:type="palette:GroupCmp">
+    <cmpEntries xsi:type="palette:ToolEntry" xmi:id="com.ibm.broker.xternal.plugins.jobexecutionnodes.JobExecution" icon16Name="platform:/plugin/com.ibm.broker.xternal.plugins.jobexecutionnodes/icons/full/clcl16/com/ibm/broker/xternal/plugins/jobexecutionnodes/JobExecution.gif" icon32Name="platform:/plugin/com.ibm.broker.xternal.plugins.jobexecutionnodes/icons/full/obj32/com/ibm/broker/xternal/plugins/jobexecutionnodes/JobExecution.gif" toolClassName="com.ibm.etools.mft.flow.editor.MFTNodeCreationTool" toolClassPluginId="com.ibm.etools.mft.flow" nodeURI="com/ibm/broker/xternal/plugins/jobexecutionnodes/JobExecution.msgnode">
+      <entryLabel xsi:type="utility:TranslatableString" key="entry.com.ibm.broker.xternal.plugins.jobexecutionnodes.JobExecution" bundleName="palette" pluginId="com.ibm.broker.xternal.plugins.jobexecutionnodes"/>
+      <entryShortDescription xsi:type="utility:TranslatableString" key="tooltip.com.ibm.broker.xternal.plugins.jobexecutionnodes.JobExecution" bundleName="palette" pluginId="com.ibm.broker.xternal.plugins.jobexecutionnodes"/>
+    </cmpEntries>
+  </cmpGroups>
+</palette:CategoryCmp>
