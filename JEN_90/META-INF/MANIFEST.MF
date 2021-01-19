@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-Vendor: JobExecutionNode Provider
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Name: JobExecutionNode
+Bundle-SymbolicName: com.ibm.broker.xternal.plugins.jobexecutionnodes;
+  singleton:=true
+Require-Bundle: com.ibm.etools.mft.api,com.ibm.etools.mft.config
+Bundle-Version: 11.0.0.X
+Bundle-ManifestVersion: 2
+

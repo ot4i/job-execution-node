@@ -168,8 +168,9 @@ public class JobExecutionNode extends MbNode implements MbNodeInterface
 		PropertyData pdata = returnpros(msg);
 
 		logger.logData_Debug("message was  " + new String(pdata.getMessage()));
-		List commands = (List) msg.evaluateXPath("/message/command");
-        List resultFilename =(List) msg.evaluateXPath("/message/filename");
+		
+		List<MbElement> commands = (List<MbElement>) msg.evaluateXPath("/message/command");
+        List<MbElement> resultFilename =(List<MbElement>) msg.evaluateXPath("/message/filename");
         
 		if(commands==null || commands.size() == 0){
 			logger.logData_Debug("No Command found in message");
